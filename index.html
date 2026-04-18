@@ -64,39 +64,5 @@
 
   </main>
   <script src="script.js"></script>
-  
-  <script>
-    const leafContainer = document.getElementById("leaves-container");
-
-    function createLeaf() {
-      const img = document.createElement("img");
-      img.classList.add("leaf");
-
-      const logos = [
-        "images/html.png",
-        "images/css-3.png",
-        "images/js.png",
-        "images/python.png",
-        "images/java.png"
-      ];
-
-      img.src = logos[Math.floor(Math.random() * logos.length)];
-      img.style.left = Math.random() * 100 + "vw";
-
-      const size = Math.random() * 30 + 30;
-      img.style.width = size + "px";
-
-      img.style.animationDuration = Math.random() * 5 + 5 + "s";
-      img.style.transform = `translateX(${Math.random() * 60 - 30}px)`;
-
-      leafContainer.appendChild(img);
-
-      setTimeout(() => {
-        img.remove();
-      }, 10000);
-    }
-
-    setInterval(createLeaf, 500);
-  </script>
 </body>
 </html>
