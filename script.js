@@ -20,11 +20,11 @@ function createLeaf() {
   img.classList.add("leaf");
 
   const logos = [
-    "images/html.png",
-    "images/css-3.png",
-    "images/js.png",
-    "images/python.png",
-    "images/java.png"
+    "html.png",
+    "css-3.png",
+    "js.png",
+    "python.png",
+    "java.png"
   ];
 
   img.src = logos[Math.floor(Math.random() * logos.length)];
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", typeEffect);
 
 function downloadCV() {
   const link = document.createElement("a");
-    link.href = "images/cv.pdf";
+    link.href = "cv.pdf";
     link.download = "cv.pdf";
     document.body.appendChild(link);
     link.click();
